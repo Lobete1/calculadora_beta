@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="main.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+<script>
+	let num1 = 1;
+	let num2 = 2.5;
+	num1 = num1 + num2;
+	console.log(num1);
+</script>
+
+<div>
+<!-- DEcimAleS////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<h1 id="decimal">--EN DECIMAl--</h1>
+
+<!-- SUMA -->
+
+	<h1 class='decimal' onclick="
+suma()
+	">SUMA</h1>
+
+<!-- RESTA -->
+
+	<h1 class='decimal' onclick="
+resta()
+	">RESTA</h1>
+
+<!-- MULTIPLICACION -->
+
+	<h1 class='decimal' onclick="
+multiplicacion()
+	">MULTIPLICACION</h1>
+
+<!-- DIVISION -->
+
+	<h1 class='decimal' onclick="
+division()
+	">DIVISION</h1>
+
+<!-- RESTO DE DIVISION -->
+
+	<h1 class='decimal' onclick="
+restoDivision()
+	">RESTO DE LA DIVISION</h1>
+
+<!-- ELEVACION -->
+
+	<h1 class='decimal' onclick="
+elevacion()
+	">ELEVACION</h1>
+
+<!-- RAIZ CUADRADA -->
+
+	<h1 class='decimal' onclick="
+raiz()
+	">RAIZ CUADRADA</h1>
+
+<!-- PROMEDIO -->
+
+	<h1 class='decimal' onclick="
+promedio()
+	">PROMEDIO</h1>
+
+<!-- FRACCION A DECIMAL -->
+
+	<h1 class="decimal" onclick="
+fraccionDecimal()
+	">DE FRACCION A DECIMAL</h1>
+
+<!-- DECIMAL A FRACCION -->
+
+	<h1 class="decimal" onclick="
+decimalFraccion()
+	">DE DECIMAL A FRACCION</h1>
+
+	<h1 class="decimal" onclick="
+geometria()
+	">GEOMETRIA</h1>
+
+	</div>
+
+<div>
+
+<!-- BiNaRiOs/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<h1 id="binario">--EN BINARIO--</h1>
+
+<!-- BINARIO a DECIMAL -->
+
+	<h1 class='binario' onclick="
+binarioDecimal()
+	">DE BINARIO A DECIMAL</h1>
+
+<!-- DECIMAL A BINARIO -->
+
+	<h1 class='binario' onclick="
+decimalBinario()
+	">DE DECIMAL A BINARIO</h1>
+
+<!-- SUMA BINARIO -->
+
+	<h1 class='binario' onclick="
+sumaBinaria()
+	">SUMA EN BINARIO</h1>
+
+<!-- RESTA BINARIA -->
+
+	<h1 class='binario' onclick="
+restaBinaria()
+	">RESTA EN BINARIO</h1>
+
+<!-- MULTIPLICACION BINARIA -->
+
+	<h1 class='binario' onclick="
+multiplicacionBinaria()
+	">MULTIPLICACION BINARIA</h1>
+
+<!-- DIVISION BINARIA -->
+
+	<h1 class='binario' onclick="
+divisionBinaria()
+	">DIVISION BINARIA</h1>
+
+<!-- RESTO DE DIVISION BINIRIA -->
+
+	<h1 class='binario' onclick="
+restoDivisionBinaria()
+	">RESTO DE DIVISION EN BINIRIO</h1>
+
+<!-- ELEVACION BINARIA -->
+
+	<h1 class='binario' onclick="
+elevacionBinaria()
+	">ELEVACION EN BINARIO</h1>
+
+<!-- RAIZ CUADRADA BINARIA -->
+
+	<h1 class='binario' onclick="
+raizBinaria()
+	">RAIZ CUADRADA EN BINARIO</h1>
+
+<!-- PROMEDIO BINARIA -->
+
+<h1 class='binario' onclick="
+promedioBinario()
+	">PROMEDIO EN BINARIO</h1>
+
+	</div>
+
+<div>
+<!-- HEXADECIMAL //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<h1 id="hexadecimal">--HEXADECIMAL--</h1>
+
+<!-- HEXADECIMAL a DECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+hexadecimalBinario()
+	">DE HEXADECIMAL A DECIMAL</h1>
+
+<!-- DECIMAL A HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+decimalHexadecimal()
+	">DE DECIMAL A HEXADECIMAL</h1>
+
+<!-- SUMA HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+sumaHexadecimal()
+	">SUMA EN HEXADECIMAL</h1>
+
+<!-- RESTA HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+restaHexadecimal()
+	">RESTA EN HEXADECIMAL</h1>
+
+<!-- MULTIPLICACION HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+multiplicacionHexadecimal()
+	">MULTIPLICACION EN HEXADECIMAL</h1>
+
+<!-- DIVISION HEXADECIMAl -->
+
+	<h1 class='hexadecimal' onclick="
+divisionHexadecimal()
+	">DIVISION EN HEXADECIMAL</h1>
+
+<!-- RESTO DE DIVISION HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+restoDivisionHexadecimal()
+	">RESTA DE DIVISION EN HEXADECIMAL</h1>
+
+<!-- ELEVACION HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+elevacionHexadecimal()
+	">ELEVACION HEXADECIMAL</h1>
+
+<!-- RAIZ CAUDRADA HEXADECIMAL -->
+
+	<h1 class='hexadecimal' onclick="
+raizHexadecimal()
+	">RAIZ CUADRADA EN HEXADECIMAL</h1>
+
+<!-- PROMEDIO HEXADECIMAL -->
+
+<h1 class='hexadecimal' onclick="
+promedioHexadecimal()
+	">PROMEDIO EN BINARIO</h1>
+
+	</div>
+
+<!-- /PRUEBA/ -->
+
+<br>
+
+<h1 onclick="
+raizCubicaD()">Raiz Cubica</h1>
+
+<h1 onclick="
+pruebaSweet()">Ir a otra pagina</h1>
+
+<!-- RANDOM NUMBERS -->
+
+<h1 class='palabrasG'onclick="
+alert('esto esta potenciado por RANDOM.ORG una pagina donde utiliza la aletoriedad del ruido del aire para generarlos si quieres ver mas funciones visita su pagina')
+">NUMEROS RANDOM</h1>
+
+<iframe src="https://www.ran	dom.org/widgets/integers/iframe.php?title=True+Random+Number+Generator&amp;buttontxt=Generate&amp;width=160&amp;height=235&amp;border=on&amp;bgcolor=%23FFFFFF&amp;txtcolor=%23777777&amp;altbgcolor=%23CCCCFF&amp;alttxtcolor=%23000000&amp;defaultmin=&amp;defaultmax=&amp;fixed=off" frameborder="0" width="160" height="235" style="min-height:235px;" scrolling="no" longdesc="https://www.random.org/integers/">
+The numbers generated by this widget come from RANDOM.ORG's true random number generator.
+</iframe>
+<footer>© 2022 Lobete</footer>
+</body>
+</html>
