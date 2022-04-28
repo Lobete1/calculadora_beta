@@ -1,5 +1,6 @@
-///////////////////////////////////////////////////////DECIMAL/////////////////////////////////////////////////////
+// Read the html to understand why i dont put the descriptions
 
+///////////////////////////////////////////////////////DECIMAL/////////////////////////////////////////////////////
 
 // suma
 
@@ -17,10 +18,6 @@ function suma() {
 			alert('no crees que es demasiado infantil?');
 		}
 	}
-	if (Number.isNaN(resultadoSuma)) {
-		alert('Ponlo bien')
-		suma();
-	}
 }
 // resta
 
@@ -37,7 +34,7 @@ function resta() {
 function multiplicacion() {
 	let multiplicando = [prompt('dime el multiplicando'), prompt('dime el multiplicador')];
 
-	let resultadoMultiplicacion = parseInt(multiplicando[0]) * parseInt(multiplicando[1]);
+	let resultadoMultiplicacion = parseFloat(multiplicando[0]) * parseFloat(multiplicando[1]);
 	alert('el resultado es ' + resultadoMultiplicacion);
 }
 
@@ -412,7 +409,7 @@ function decimalFraccion() {
 	else if (dec == 0.12) {
 		alert('12/100');
 	}
-	else if (dec == 0.31) {
+	else if (dec == 0.13) {
 		alert('13/100');
 	}
 	else if (dec == 0.14) {
@@ -456,6 +453,10 @@ function geometria() {
 	let pregunta1 = prompt('que tipo de figura es?')
 	if (pregunta1 == 'triangulo') {
 		let trianguloProc = [prompt('dime cuanto mide su primer lado'), prompt('dime cuanto mide el segundo lado'), prompt('dime cuanto mide el tercer lado'), prompt('dime cuanto mide su base'), prompt('dime cual es la altura')];
+		let trianguloPer = parseFloat(trianguloProc[0]) + parseFloat(trianguloProc[1]) + parseFloat(trianguloProc[2]);
+		let trianguloArea = parseFloat(trianguloProc[3]) * parseFloat(trianguloProc[4]) / 2;
+
+		alert('su perimetro es ' + trianguloPer + ', y la area es ' + trianguloArea);
 
 
 	}
