@@ -41,6 +41,8 @@
 	font-size: 40px;
 }
 
+
+
 #hexadecimal {
 	font-family: calibri;
 	color: #646464;
@@ -58,6 +60,30 @@
 	color: #019201;
 	font-size: 40px;
 }
+
+
+
+#base64 {
+	font-family: calibri;
+	color: #646464;
+}
+
+.base64 {
+	font-family: sans-serif;
+	font-weight: 100;
+	color: #000000;
+}
+
+.base64:hover {
+	font-family: sans-serif;
+	font-weight: 600;
+	color: #ff7b00;
+	font-size: 40px;
+}
+
+
+
+
 
 footer {
     font-family: sans-serif;

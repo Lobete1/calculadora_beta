@@ -7,7 +7,7 @@
 function suma() {
 	let sumandos = [prompt('dime el primer sumando'), prompt('dime el segundo sumando')];
 
-	let resultadoSuma = parseInt(sumandos[0]) + parseInt(sumandos[1]);
+	let resultadoSuma = parseFloat(sumandos[0]) + parseFloat(sumandos[1]);
 
 	alert('el resultado es ' + resultadoSuma);
 
@@ -24,7 +24,7 @@ function suma() {
 function resta() {
 	let resta = [prompt('dime el minuendo'), prompt('dime el sustraendo')];
 
-	let resultadoResta = parseInt(resta[0]) - parseInt(resta[1]);
+	let resultadoResta = parseFloat(resta[0]) - parseFloat(resta[1]);
 
 	alert('la resta es ' + resultadoResta);
 }
@@ -43,8 +43,8 @@ function multiplicacion() {
 function division() {
 	let division = [prompt('dime el dividendo'), prompt('dime el divisor')];
 
-	let resultadoDivision = parseInt(division[0]) / parseInt(division[1]);
-	let resulatadoComp = parseInt(division[0]) % parseInt(division[1]);
+	let resultadoDivision = parseFloat(division[0]) / parseFloat(division[1]);
+	let resulatadoComp = parseFloat(division[0]) % parseFloat(division[1]);
 
 	alert('el resultado es ' + resultadoDivision + ', y el resto si no se usara punto decimal ' + resulatadoComp);
 }
@@ -54,7 +54,7 @@ function division() {
 function elevacion() {
 	let elevacion = [prompt('dime el numero que quieres elevar'), prompt('dime la elevacion')];
 
-	let resultadoElevacion = parseInt(elevacion[0]) ** parseInt(elevacion[1]);
+	let resultadoElevacion = parseFloat(elevacion[0]) ** parseFloat(elevacion[1]);
 
 	alert('el resultado es ' + resultadoElevacion);
 }
@@ -64,7 +64,7 @@ function elevacion() {
 function raiz() {
 	let raiz = [prompt('dime el numero')];
 
-	raiz = parseInt(raiz);
+	raiz = parseFloat(raiz);
 
 	resultadoRaizCuadrada = Math.sqrt(raiz);
 
@@ -452,12 +452,26 @@ function decimalFraccion() {
 function geometria() {
 	let pregunta1 = prompt('que tipo de figura es?')
 	if (pregunta1 == 'triangulo') {
-		let trianguloProc = [prompt('dime cuanto mide su primer lado'), prompt('dime cuanto mide el segundo lado'), prompt('dime cuanto mide el tercer lado'), prompt('dime cuanto mide su base'), prompt('dime cual es la altura')];
-		let trianguloPer = parseFloat(trianguloProc[0]) + parseFloat(trianguloProc[1]) + parseFloat(trianguloProc[2]);
-		let trianguloArea = parseFloat(trianguloProc[3]) * parseFloat(trianguloProc[4]) / 2;
+		let preguntaT1 = prompt('que quieres calcular *hipotenusa, forumulas generales');	
+		if (preguntaT1 == 'hipotenusa') {
+			let hipotenusaP1 = [prompt('dime el primer cateto'), prompt('dime el sugundo cateto')];
 
-		alert('su perimetro es ' + trianguloPer + ', y la area es ' + trianguloArea);
+			let hipotenusaPr0 = parseFloat(hipotenusaP1[0]) ** 2;
+			let hipotenusaPr1 = parseFloat(hipotenusaP1[1]) ** 2;
 
+			let hipotenusaPrS = hipotenusaPr0 + hipotenusaPr1;
+
+			let hipotenusaRF = Math.sqrt(hipotenusaPrS);
+
+			alert(hipotenusaRF);
+		}
+		else {
+			let trianguloProc = [prompt('dime cuanto mide su primer lado'), prompt('dime cuanto mide el segundo lado'), prompt('dime cuanto mide el tercer lado'), prompt('dime cuanto mide su base'), prompt('dime cual es la altura')];
+			let trianguloPer = parseFloat(trianguloProc[0]) + parseFloat(trianguloProc[1]) + parseFloat(trianguloProc[2]);
+			let trianguloArea = parseFloat(trianguloProc[3]) * parseFloat(trianguloProc[4]) / 2;
+
+			alert('su perimetro es ' + trianguloPer + ', y la area es ' + trianguloArea);
+		}
 
 	}
 }
@@ -1121,9 +1135,10 @@ function raizCubicaD() {
 
 	raizCD = Math.cbrt(raizCD);
 
-	alert(raizCD)
+	alert(raizCD);
 }
 
 function calcSeno() {
 	let seno = prompt('dime el numero');
 }
+
