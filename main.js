@@ -5,19 +5,23 @@
 // suma
 
 function suma() {
-	let sumandos = [prompt('dime el primer sumando'), prompt('dime el segundo sumando')];
+	let numerosS = 0;
 
-	let resultadoSuma = parseFloat(sumandos[0]) + parseFloat(sumandos[1]);
+	let sumandos = prompt('Cuantos sumandos seran');
 
-	alert('el resultado es ' + resultadoSuma);
+	for (let i = 1; i <= sumandos; i++) {
+		let pregunta = prompt('Dime el sumando ' + i);
 
-	if (resultadoSuma == 13) {
-		let respuestaJ = [prompt('aqui vamos')];
+		numerosS = parseFloat(numerosS);
+		pregunta = parseFloat(pregunta);
 
-		if (respuestaJ == 'mientras mas me la mamas mas me crece') {
-			alert('no crees que es demasiado infantil?');
-		}
+		pregunta = pregunta + numerosS;
+
+		numerosS = pregunta;
+		
 	}
+
+	alert('El resultado es ' + numerosS);
 }
 // resta
 
@@ -106,6 +110,57 @@ function fraccionDecimal() {
 	alert(resultado);
 }
 
+// suma de fracciones
+
+function sumaFraccionesD() {
+	let fraS1 = prompt('dime la fraccion')
+	let fraS2 = prompt('dime la segunda fracccion')
+
+	let operandos1 = fraS1.split('/');
+	let operandos2 = fraS2.split('/');
+
+	let proc1 = parseFloat(operandos1[0]) * parseFloat(operandos2[1]);
+	let proc2 = parseFloat(operandos1[1]) * parseFloat(operandos2[0]);
+
+	let fracP1 = parseFloat(proc1) + parseFloat(proc2);
+	let fracP2 = parseFloat(operandos1[1]) * parseFloat(operandos2[1]);
+
+	alert('el resultado es ' + fracP1 + '/' + fracP2);
+}
+
+// resta de fracciones
+
+function restaFraccionesD() {
+	let fraR1 = prompt('dime la fraccion')
+	let fraR2 = prompt('dime la segunda fracccion')
+
+	let operandos1 = fraR1.split('/');
+	let operandos2 = fraR2.split('/');
+
+	let proc1 = parseFloat(operandos1[0]) * parseFloat(operandos2[1]);
+	let proc2 = parseFloat(operandos1[1]) * parseFloat(operandos2[0]);
+
+	let fracP1 = parseFloat(proc1) - parseFloat(proc2);
+	let fracP2 = parseFloat(operandos1[1]) * parseFloat(operandos2[1]);
+
+	alert('el resultado es ' + fracP1 + '/' + fracP2);
+}
+
+// multiplicacion de fracciones 
+
+function mulltiFraccionesD() {
+	let fraR1 = prompt('dime la fraccion')
+	let fraR2 = prompt('dime la segunda fracccion')
+
+	let operandos1 = fraR1.split('/');
+	let operandos2 = fraR2.split('/');
+
+	let proc1 = parseFloat(operandos1[0]) * parseFloat(operandos2[0]);
+	let proc2 = parseFloat(operandos1[1]) * parseFloat(operandos2[1]);
+
+	alert('el resultado es ' + proc1 + '/' + proc2);
+}
+
 // decimal a fraccion
 
 function decimalFraccion() {
@@ -122,22 +177,22 @@ function decimalFraccion() {
 		alert('3/10');
 	}
 	else if (dec == 0.4) {
-		alert('4/10')
+		alert('4/10');
 	}
 	else if (dec == 0.5) {
-		alert('5/10 o 1/2')
+		alert('5/10 o 1/2');
 	}
 	else if (dec == 0.6) {
-		alert('6/10')
+		alert('6/10');
 	}
 	else if (dec == 0.7) {
-		alert('7/10')
+		alert('7/10');
 	}
 	else if (dec == 0.8) {
-		alert('8/10')
+		alert('8/10');
 	}
 	else if (dec == 0.9) {
-		alert('9/10')
+		alert('9/10');
 	}
 	else if (dec == 0.10) {
 	}
@@ -151,37 +206,37 @@ function decimalFraccion() {
 		alert('13/100');
 	}
 	else if (dec == 0.14) {
-		alert('14/100')
+		alert('14/100');
 	}
 	else if (dec == 0.15) {
-		alert('15/100')
+		alert('15/100');
 	}
 	else if (dec == 0.16) {
-		alert('16/100')
+		alert('16/100');
 	}
 	else if (dec == 0.17) {
-		alert('17/100')
+		alert('17/100');
 	}
 	else if (dec == 0.18) {
-		alert('18/100')
+		alert('18/100');
 	}
 	else if (dec == 0.19) {
-		alert('19/100')
+		alert('19/100');
 	}
 	else if (dec == 0.20) {
-		alert('20/100')
+		alert('20/100');
 	}
 	else if (dec == 0.21) {
-		alert('21/100')
+		alert('21/100');
 	}
 	else if (dec == 0.22) {
-		alert('22/100')
+		alert('22/100');
 	}
 	else if (dec == 0.23) {
-		alert('23/100')
+		alert('23/100');
 	}
 	else {
-		alert('escribe algo valido o avisame si me falta algo primordial')
+		alert('escribe algo valido o avisame si me falta algo primordial o si tines alguna idea de como automatizar esto contactate conmigo')
 	}
 }
 
@@ -336,8 +391,7 @@ function promedioBinario() {
 	for (let i = 1; i <= confirmacionPromedioB; i++) {
 		let preguntaB = prompt('Dime el numero ');
 
-		numerosPB = parseInt(numerosPB);
-		preguntaB = parseInt(preguntaB);
+		preguntaB = parseInt(preguntaB, 2);
 
 		preguntaB = preguntaB + numerosPB;
 
@@ -355,7 +409,7 @@ function promedioBinario() {
 // hexadecimal a decimal
 
 function hexadecimalDecimal() {
-	let numeroEnHexadecimal = [prompt('dime el numero en binario')];
+	let numeroEnHexadecimal = prompt('dime el numero en hexadecimal');
 
 	numeroEnHexadecimal = parseInt(numeroEnHexadecimal, 16);
 
@@ -472,10 +526,9 @@ function promedioHexadecimal() {
 	for (let i = 1; i <= confirmacionPromedioH; i++) {
 		let preguntaH = prompt('Dime el numero ');
 
-		numerosPH = parseInt(numerosPH);
-		preguntaH = parseInt(preguntaH);
+		preguntaH = parseInt(preguntaH, 16);
 
-		preguntaH = preguntaH + numerosPB;
+		preguntaH = preguntaH + numerosPH;
 
 		numerosPH = preguntaH;
 		
